@@ -28,7 +28,7 @@ function Widget() {
 
       <ChatTeardropDots 
         size={24} 
-        weight={'bold'}
+        weight={"bold"}
         color={theme.colors.text_on_brand_color}  
         />
         
