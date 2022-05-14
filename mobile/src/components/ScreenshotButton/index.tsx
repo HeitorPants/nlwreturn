@@ -18,11 +18,18 @@ export function ScreenshotButton( { screenshot, onTakeShot, onRemoveShot }: Prop
     onPress={screenshot ? onRemoveShot : onTakeShot} >
       {
         screenshot ? 
-        <Trash 
+        <View>
+          <Image 
+            style={styles.image} 
+            source={{ uri: screenshot }} 
+            />
+          <Trash 
         size={22} 
         color={theme.colors.text_secondary} 
         weight={'fill'} style={styles.removeIcon} 
-        /> : <Camera 
+        />
+        </View>
+         : <Camera 
         size={24} 
         color={theme.colors.text_primary} 
         weight={'bold'} 

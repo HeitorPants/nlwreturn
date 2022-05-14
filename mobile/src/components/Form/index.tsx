@@ -3,6 +3,7 @@ import React from 'react';
 import { View, TextInput, Image, Text, TouchableOpacity } from 'react-native';
 
 import { FeedbackType } from '../../components/Widget'
+import { Button } from '../../components/Button'
 import { ScreenshotButton } from '../ScreenshotButton'
 
 import { styles } from './styles';
@@ -44,7 +45,9 @@ export function Form({ feedbackType }: Props) {
             <ScreenshotButton 
             onTakeShot={() => {}} 
             onRemoveShot={() => {}} 
-            screenshot="" />
+            screenshot="https://github.com/HeitorPants.png" />
+
+            <Button isLoading={true} />
         </View>
 
     </View>
