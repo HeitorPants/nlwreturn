@@ -6,9 +6,9 @@ import { styles } from './styles';
 export function Copyright() {
   return (
     <View>
-        <text style={styles.text}>
+        <Text style={styles.text}>
         Feito com ♥ by Pants
-        </text>
+        </Text>
 
     </View>
   );
